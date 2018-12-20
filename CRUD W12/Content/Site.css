@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color: darkgrey;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -21,4 +22,54 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+#topDiv {
+    padding-top: 10px;
+    z-index: 100;
+    opacity: 1;
+    background-color: darkgrey;
+    height: 144px;
+    width: 100%;
+    position: fixed;
+}
+#bottonDiv {
+    margin: 10px 0px 10px 0px;
+    position: relative;
+    top: 150px;
+}
+.disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+    color: #c0c0c0;
+    background-color: #ffffff;
+}
+.menuHeader {
+    color: #9d9d9d;
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+#formId, #formNome {
+    margin-right: 3px;
+}
+#tbData td {
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 5px;
+}
+#tbData th {
+    border: 1px solid black;
+    padding: 5px;
+}
+input[readonly] {
+    background-color: lightgrey;
+    pointer-events: none;
+}
+.required{
+    display: inline;
+    visibility:hidden;
+    color: red;
 }
